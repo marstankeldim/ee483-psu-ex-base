@@ -16,7 +16,6 @@ class TurtleMove: #class object
         else: # Move back
             msg.linear.x = -1
             self.front = True
-        rospy.loginfo(self.front)
         self.pub.publish(msg) # publishes the Twist msg to the topic
 
 
